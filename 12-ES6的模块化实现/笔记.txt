@@ -1,0 +1,7 @@
+在script中type设置为module时，在本地打开会出现跨域错误
+
+原因：HTML使用type='module'会默认产生跨域请求，我们在本地打开时，
+file协议并不支持跨域请求，仅支持协议方案:http data chrome chrome扩展 https
+
+解决方案：vscode下载Live Server插件  Live Server是可以运行前端静态资源文件的一个服务器
+通过运行服务用网络请求http协议访问文件
